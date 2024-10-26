@@ -2,7 +2,7 @@
 body{
     font-size: small;
     color: blueviolet;
-    background-image: url("/Imagenes/Valentina-foto-caviahue-960x467.webp") ;
+    background-image: url("./Imagenes/paisaje-caviahue.jpg") ;
     background-repeat: no-repeat;
     background-size: cover;/*para que cubra toda la pagina*/
     background-position: center center;/*para centrar la img*/
@@ -14,8 +14,26 @@ header{
     align-items: center;
     background-color: #5b78a7;
     padding: 50px 50px;
+    
 }
 /* menu */
+
+.nombrespa{
+    color: #000;
+    width: 150px;
+    height: 50px;
+    font-family: 'Roboto mono', monospace;
+    
+}
+
+.info{
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  top: 10px;
+  right: 0;
+  
+}
 
 #menu ul {
     list-style:none;
