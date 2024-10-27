@@ -51,7 +51,7 @@ input{/*Para la transicon de el buscar*/
     color: gray;
 }
 
-.bsc{
+.bsc{/*para darle forma y seguir con la transicion*/
     position: absolute;
     right: 0;
     top: 0;
@@ -65,22 +65,22 @@ input{/*Para la transicon de el buscar*/
     transition: .5s;
 }
 
-.bsc i{
+.bsc i{/*TRANSICON*/
     font-size: 25px;
     color: #fff;
     line-height: 80px;
     transition: all .7 ease;
 }
 
-.Buscador:hover input{
+.Buscador:hover input{/*TRANSICON cuando este arriba del buscador*/
     width: 350px;
 }
 
-.Buscador:hover i{
+.Buscador:hover i{/*TRANSICON*/
     transform: rotate(-360deg);
 }
 
-.bsc{
+.bsc{/*TRANSICON*/
     background: #2e518b;
 }
 
