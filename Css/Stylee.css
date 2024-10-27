@@ -1,7 +1,7 @@
 
 body{
     font-size: small;
-    color: blueviolet;
+    color: rgb(255, 255, 255);
     background-image: url("./Imagenes/paisaje-caviahue.jpg") ;
     background-repeat: no-repeat;
     background-size: cover;/*para que cubra toda la pagina*/
@@ -13,17 +13,75 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: #5b78a7;
-    padding: 50px 50px;
+    padding: 20px 20px;
     
 }
 /* menu */
 
-.nombrespa{
-    color: #000;
-    width: 150px;
-    height: 50px;
-    font-family: 'Roboto mono', monospace;
-    
+
+/*nombre spa*/
+.Logo{
+   display: flex;
+   justify-content: end;
+   font-size: 25px;
+}
+
+.Buscador{/*para el posicion*/
+position: absolute;
+left: 48%;
+top: 8%;
+transform: translate(-50%,-50%);
+padding: 10px;
+}
+
+input{/*Para la transicon de el buscar*/
+    outline: none;
+    box-sizing: border-box;
+    height: 60px;
+    width: 0px;
+    padding: 0 20px;
+    color: black;
+    border-radius: 50px;
+    font-size: 20px;
+    border: 1px solid #2e518b;
+    transition: all .7s ease;
+}
+
+::placeholder{
+    color: gray;
+}
+
+.bsc{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    background: #2e518b;
+    line-height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.bsc i{
+    font-size: 25px;
+    color: #fff;
+    line-height: 80px;
+    transition: all .7 ease;
+}
+
+.Buscador:hover input{
+    width: 350px;
+}
+
+.Buscador:hover i{
+    transform: rotate(-360deg);
+}
+
+.bsc{
+    background: #2e518b;
 }
 
 .info{
@@ -105,3 +163,4 @@ header{
    #menu ul li:hover > ul {
     display:block;
    }
+
