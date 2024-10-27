@@ -1,26 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Danfo&family=Poppins");
 
 body{
     font-size: small;
     color: rgb(255, 255, 255);
-    background-image: url("./Imagenes/paisaje-caviahue.jpg") ;
+    /*background-image: url("./Imagenes/paisaje-caviahue.jpg") ;
     background-repeat: no-repeat;
     background-size: cover;/*para que cubra toda la pagina*/
-    background-position: center center;/*para centrar la img*/
-    background-attachment: fixed;/*para que cubra todo tamaño de pantalla*/
-    position: relative;/*para que el footer quede bien puesto*/
-    padding-bottom: 60em;
-    min-height: 100vh;
+    /*background-position: center center;/*para centrar la img*/
+    /*background-attachment: fixed;/*para que cubra todo tamaño de pantalla*/
+    /*position: relative;/*para que el footer quede bien puesto*/
+    display: flex;
+    flex-direction: column;
+    min-height:400vh;
+    background-color: #dad7cd;
+    position: relative;
 }
-header{
+
+header{/* menu */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2d5842;
-    padding: 20px 20px;
-    
+    background-color: #3a5a40;
+    padding: 20px 20px;  
 }
-/* menu */
-
 
 /*nombre spa*/
 .Logo{
@@ -29,11 +31,29 @@ header{
    font-size: 25px;
 }
 
+.belleza{/*para las imagenes del cuerpo*/
+    text-align: center;
+    font-size: 50px;
+    color: #000;
+    font-family: "Bona Nova SC";
+}
+
+.belleza h2{/*para el h2 de la imagen*/
+    font-size: 80px;
+    color: #000;
+    font-family: "Bona Nova SC";
+}
+
+.belleza p{
+    font-size: 30px;
+    color: #5a5956;
+    
+}
 
 .Buscador{/*para el posicion*/
 position: absolute;
-left: 48%;
-top: 4.3%;
+left: 50%;
+top: 1.8%;
 transform: translate(-50%,-50%);
 padding: 10px;
 }
@@ -85,8 +105,10 @@ input{/*Para la transicon de el buscar*/
 }
 
 .bsc{/*TRANSICON*/
-    background: #368a4c;
+    background: #588157;
 }
+
+
 
 .imgspa{
     display: flex;
@@ -111,13 +133,11 @@ input{/*Para la transicon de el buscar*/
    }
    
    /* items del menu */
-   
    #menu ul li {
-    background-color:#386755;
+    background-color:#588157;
    }
    
    /* enlaces del menu */
-   
    #menu ul a {
     display:block;
     color:#fff;
@@ -140,12 +160,11 @@ input{/*Para la transicon de el buscar*/
    }
    
    /* efecto al pasar el ratón por los items del menu */
-   
    #menu ul li:hover {
     background:#39915e;
    }
+   
    /* menu desplegable */
-
 #menu ul ul {
     display:none;
     position:absolute;
@@ -156,37 +175,35 @@ input{/*Para la transicon de el buscar*/
    }
    
    /* items del menu desplegable */
-   
    #menu ul ul li {
     float:none;
     width:150px
    }
    
-   /* enlaces de los items del menu desplegable */
-   
+   /* enlaces de los items del menu desplegable */ 
    #menu ul ul a {
     line-height:120%;
     padding:10px 15px;
    }
    
    /* items del menu desplegable al pasar el ratón */
-   
    #menu ul li:hover > ul {
     display:block;
    }
 
    .pie{/*para el footer*/
-    background-color: #2d5842;
+    background-color: #3a5a40;
     position: absolute;
     bottom: 0;
     width: 99%;
+    height: 15%;
    }
 
    .sabrina{/*El nombre del footer*/
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-size: 20px;
+    font-size: 40px;
     }
 
 .seccion{
@@ -216,6 +233,10 @@ a{/*para los a*/
     padding: 20px;
     font-size: 30px;
     background: #23372d;
+    position: absolute;
+    bottom: 0;
+    width: 98.3%;
+    height: 10%;
 }
 
 
