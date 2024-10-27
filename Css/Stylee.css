@@ -7,12 +7,15 @@ body{
     background-size: cover;/*para que cubra toda la pagina*/
     background-position: center center;/*para centrar la img*/
     background-attachment: fixed;/*para que cubra todo tamaño de pantalla*/
+    position: relative;/*para que el footer quede bien puesto*/
+    padding-bottom: 60em;
+    min-height: 100vh;
 }
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #5b78a7;
+    background-color: #2d5842;
     padding: 20px 20px;
     
 }
@@ -26,10 +29,11 @@ header{
    font-size: 25px;
 }
 
+
 .Buscador{/*para el posicion*/
 position: absolute;
 left: 48%;
-top: 8%;
+top: 4.3%;
 transform: translate(-50%,-50%);
 padding: 10px;
 }
@@ -81,7 +85,14 @@ input{/*Para la transicon de el buscar*/
 }
 
 .bsc{/*TRANSICON*/
-    background: #2e518b;
+    background: #368a4c;
+}
+
+.imgspa{
+    display: flex;
+    justify-content: end;
+    left: 90%;
+    top: 90%;
 }
 
 .info{
@@ -102,7 +113,7 @@ input{/*Para la transicon de el buscar*/
    /* items del menu */
    
    #menu ul li {
-    background-color:#2e518b;
+    background-color:#386755;
    }
    
    /* enlaces del menu */
@@ -131,7 +142,7 @@ input{/*Para la transicon de el buscar*/
    /* efecto al pasar el ratón por los items del menu */
    
    #menu ul li:hover {
-    background:#5b78a7;
+    background:#39915e;
    }
    /* menu desplegable */
 
@@ -163,4 +174,50 @@ input{/*Para la transicon de el buscar*/
    #menu ul li:hover > ul {
     display:block;
    }
+
+   .pie{/*para el footer*/
+    background-color: #2d5842;
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+   }
+
+   .sabrina{/*El nombre del footer*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    }
+
+.seccion{
+    display: flex;
+    justify-content: center;
+    gap: 100px;/*para la separacion*/
+}
+.seccion div{/*Para que las secciones esten en columnas*/
+display: flex;
+flex-direction: column;
+}
+    
+div h2{/*para los h2 del footer*/
+    color: #fff;
+    font-size: 30px;
+}
+
+a{/*para los a*/
+    color: #fff;
+    text-decoration: none;/*para que no tenga decoraciones el texto*/
+    padding: 10px;
+}
+
+.derechos{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    font-size: 30px;
+    background: #23372d;
+}
+
+
+   
 
