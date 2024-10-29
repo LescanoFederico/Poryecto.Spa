@@ -3,15 +3,9 @@
 body{
     font-size: small;
     color: rgb(255, 255, 255);
-    /*background-image: url("./Imagenes/paisaje-caviahue.jpg") ;
-    background-repeat: no-repeat;
-    background-size: cover;/*para que cubra toda la pagina*/
-    /*background-position: center center;/*para centrar la img*/
-    /*background-attachment: fixed;/*para que cubra todo tamaño de pantalla*/
-    /*position: relative;/*para que el footer quede bien puesto*/
     display: flex;
     flex-direction: column;
-    min-height:400vh;
+    min-height:600vh;
     background-color: #dad7cd;
     position: relative;
 }
@@ -23,6 +17,8 @@ header{/* menu */
     background-color: #3a5a40;
     padding: 20px 20px;  
 }
+
+
 
 /*nombre spa*/
 .Logo{
@@ -52,8 +48,8 @@ header{/* menu */
 
 .Buscador{/*para el posicion*/
 position: absolute;
-left: 50%;
-top: 1.8%;
+left: 52%;
+top: 1.3%;
 transform: translate(-50%,-50%);
 padding: 10px;
 }
@@ -239,6 +235,21 @@ a{/*para los a*/
     height: 10%;
 }
 
+/*haciendo la pagina cover*/
 
-   
-
+/*@media screen and (min-width:1400px){
+    .header{
+        display: flex;
+        height: auto;
+        width: auto;
+    }
+    .body{
+        font-size: small;
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        min-height:800vh;
+        background-color: #dad7cd;
+        position: relative;
+    }
+    }
