@@ -29,14 +29,39 @@ header{/* menu */
 
 .belleza{/*para las imagenes del cuerpo*/
     text-align: center;
-    font-size: 50px;
+    font-size: 80px;
+    color: #000;
+    font-family: "Bona Nova SC";
+    padding: 150px 150px; 
+}
+
+.belleza img{/*para la transicion de la img*/
+    animation: float 3s ease-in-out infinite;
+    border-radius:10px ;
+    position: relative;
+}
+
+@keyframes float{/*para la animacion de bajada*/
+    0%,
+    100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+}
+
+
+
+.belleza h2{/*para el h2 de la imagen (titulos)*/
+    font-size: 120px;
     color: #000;
     font-family: "Bona Nova SC";
 }
 
-.belleza h2{/*para el h2 de la imagen*/
+.belleza h3{/*para el h3 de la imagen*/
     font-size: 80px;
-    color: #000;
+    color: #000000;
     font-family: "Bona Nova SC";
 }
 
