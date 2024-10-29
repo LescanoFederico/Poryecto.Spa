@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Danfo&family=Poppins");
+
+body{
+    font-size: small;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    min-height:600vh;
+    background-color: #dad7cd;
+    position: relative;
+}
+
+header{/* menu */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3a5a40;
+    padding: 20px 20px;  
+}
+
+
+
+/*nombre spa*/
+.Logo{
+   display: flex;
+   justify-content: end;
+   font-size: 25px;
+}
+
+.belleza{/*para las imagenes del cuerpo*/
+    text-align: center;
+    font-size: 50px;
+    color: #000;
+    font-family: "Bona Nova SC";
+}
+
+.belleza h2{/*para el h2 de la imagen*/
+    font-size: 80px;
+    color: #000;
+    font-family: "Bona Nova SC";
+}
+
+.belleza p{
+    font-size: 30px;
+    color: #5a5956;
+    
+}
+
+.Buscador{/*para el posicion*/
+position: absolute;
+left: 52%;
+top: 1.3%;
+transform: translate(-50%,-50%);
+padding: 10px;
+}
+
+input{/*Para la transicon de el buscar*/
+    outline: none;
+    box-sizing: border-box;
+    height: 60px;
+    width: 0px;
+    padding: 0 20px;
+    color: black;
+    border-radius: 50px;
+    font-size: 20px;
+    border: 1px solid #2e518b;
+    transition: all .7s ease;
+}
+
+::placeholder{
+    color: gray;
+}
+
+.bsc{/*para darle forma y seguir con la transicion*/
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    background: #2e518b;
+    line-height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.bsc i{/*TRANSICON*/
+    font-size: 25px;
+    color: #fff;
+    line-height: 80px;
+    transition: all .7 ease;
+}
+
+.Buscador:hover input{/*TRANSICON cuando este arriba del buscador*/
+    width: 350px;
+}
+
+.Buscador:hover i{/*TRANSICON*/
+    transform: rotate(-360deg);
+}
+
+.bsc{/*TRANSICON*/
+    background: #588157;
+}
+
+
+
+.imgspa{
+    display: flex;
+    justify-content: end;
+    left: 90%;
+    top: 90%;
+}
+
+.info{
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  top: 10px;
+  right: 0;
+  
+}
+
+   .pie{/*para el footer*/
+    background-color: #3a5a40;
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    height: 15%;
+   }
+
+   .sabrina{/*El nombre del footer*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 40px;
+    }
+
+.seccion{
+    display: flex;
+    justify-content: center;
+    gap: 100px;/*para la separacion*/
+}
+.seccion div{/*Para que las secciones esten en columnas*/
+display: flex;
+flex-direction: column;
+}
+    
+div h2{/*para los h2 del footer*/
+    color: #fff;
+    font-size: 30px;
+}
+
+a{/*para los a*/
+    color: #fff;
+    text-decoration: none;/*para que no tenga decoraciones el texto*/
+    padding: 10px;
+}
+
+.derechos{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    font-size: 30px;
+    background: #23372d;
+    position: absolute;
+    bottom: 0;
+    width: 98.3%;
+    height: 10%;
+}
+
+/*haciendo la pagina cover*/
+
+
+@media screen and (min-width:1400px){
+    .header{
+        display: flex;
+        height: auto;
+        width: auto;
+    }
+    .body{
+        font-size: small;
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        min-height:800vh;
+        background-color: #dad7cd;
+        position: relative;
+    }
+    }
+
+#menu ul{
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0px;
+	padding:30px;
+}
+
+#menu ul a{
+	display:block;
+	color:#ffffff;
+	text-decoration:none;
+	font-weight:700;
+	font-size:15px;
+	line-height:32px;
+	padding:10px 30px;
+	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+#menu ul li{
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+#menu ul li {
+    background-color:#588157;
+   }
+
+#menu ul ul{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	padding:0;
+    
+}
+
+#menu ul ul li{
+	float:none;
+	width:200px;
+}
+
+#menu ul ul a{
+	line-height:120%;
+	padding: 10px 0px 10px 10px;
+}
+
+#menu ul ul ul{
+	top: 0;
+	left:100%;
+}
+
+#menu ul li:hover > ul{
+	display:block;
+}
+
+
+   
+
+
