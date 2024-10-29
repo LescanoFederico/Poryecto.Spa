@@ -5,7 +5,7 @@ body{
     color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
-    min-height:600vh;
+    min-height:575vh;
     background-color: #dad7cd;
     position: relative;
 }
@@ -17,6 +17,7 @@ header{/* menu */
     background-color: #3a5a40;
     padding: 20px 20px;  
 }
+    
 
 
 
@@ -139,6 +140,39 @@ input{/*Para la transicon de el buscar*/
     left: 90%;
     top: 90%;
 }
+/*julian*/
+.hover-galeria{
+    position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+background-color: seagreen;
+transition: transform .5s;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #dad7cd;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(0);
+}
+
+
+
+
+
+
+
 
 .info{
   position: fixed;
@@ -154,7 +188,7 @@ input{/*Para la transicon de el buscar*/
     position: absolute;
     bottom: 0;
     width: 99%;
-    height: 15%;
+    height: 10%;
    }
 
    .sabrina{/*El nombre del footer*/
