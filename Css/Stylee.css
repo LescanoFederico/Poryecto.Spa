@@ -122,71 +122,6 @@ input{/*Para la transicon de el buscar*/
   
 }
 
-#menu ul {
-    list-style:none;
-    margin:0;
-    padding:0;
-   }
-   
-   /* items del menu */
-   #menu ul li {
-    background-color:#588157;
-   }
-   
-   /* enlaces del menu */
-   #menu ul a {
-    display:block;
-    color:#fff;
-    text-decoration:none;
-    font-weight:400;
-    font-size:15px;
-    padding:20px;
-    font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform:uppercase;
-    letter-spacing:1px;
-   }
-   
-   /* items del menu */
-   
-   #menu ul li {
-    position:relative;
-    float:left;
-    margin:0;
-    padding:0;
-   }
-   
-   /* efecto al pasar el ratón por los items del menu */
-   #menu ul li:hover {
-    background:#39915e;
-   }
-   
-   /* menu desplegable */
-#menu ul ul {
-    display:none;
-    position:absolute;
-    top:100%;
-    left:0px;
-    background:#eee;
-    padding:0;
-   }
-   
-   /* items del menu desplegable */
-   #menu ul ul li {
-    float:none;
-    width:150px
-   }
-   
-   /* enlaces de los items del menu desplegable */ 
-   #menu ul ul a {
-    line-height:120%;
-    padding:10px 15px;
-   }
-   
-   /* items del menu desplegable al pasar el ratón */
-   #menu ul li:hover > ul {
-    display:block;
-   }
-
    .pie{/*para el footer*/
     background-color: #3a5a40;
     position: absolute;
@@ -237,7 +172,8 @@ a{/*para los a*/
 
 /*haciendo la pagina cover*/
 
-/*@media screen and (min-width:1400px){
+
+@media screen and (min-width:1400px){
     .header{
         display: flex;
         height: auto;
@@ -253,3 +189,66 @@ a{/*para los a*/
         position: relative;
     }
     }
+
+#menu ul{
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0px;
+	padding:30px;
+}
+
+#menu ul a{
+	display:block;
+	color:#ffffff;
+	text-decoration:none;
+	font-weight:700;
+	font-size:15px;
+	line-height:32px;
+	padding:10px 30px;
+	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+#menu ul li{
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+#menu ul li {
+    background-color:#588157;
+   }
+
+#menu ul ul{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	padding:0;
+    
+}
+
+#menu ul ul li{
+	float:none;
+	width:200px;
+}
+
+#menu ul ul a{
+	line-height:120%;
+	padding: 10px 0px 10px 10px;
+}
+
+#menu ul ul ul{
+	top: 0;
+	left:100%;
+}
+
+#menu ul li:hover > ul{
+	display:block;
+}
+
+
+   
+
+
