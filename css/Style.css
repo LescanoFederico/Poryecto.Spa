@@ -5,7 +5,7 @@ body{
     color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
-    min-height:530vh;
+    min-height:560vh;
     background-color: #dad7cd;
     position: relative;
 }
@@ -85,9 +85,9 @@ header{/* menu */
    .pie{/*para el footer*/
     background-color: #3a5a40;
     position: absolute;
-    bottom: 0;
+    
     width: 99%;
-    height: 10%;
+    height: 12%;
     font-family: "Bona Nova SC";
    }
 
@@ -148,6 +148,36 @@ hr{
 .derechos{
     padding-right: 0px;
 }
+
+/*Items*/
+.navbar ul li {
+    background-color: #3a5a40;
+    position:relative;
+    margin:0;
+    padding:0;
+   }
+/* menu desplegable */
+.navbar ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    padding:0;
+   }
+
+.navbar ul li {
+    float:none;
+    width:150px;
+   }
+
+.navbar ul ul a {
+    line-height:120%;
+    padding:10px 15px;
+   }
+
+.navbar ul li:hover > ul {
+    display:block;
+   }
 
 .navbar{
     display: flex;
@@ -313,6 +343,8 @@ hr{
         display: flex;
         justify-content: center;
         gap: 40px;/*para la separacion*/
+        padding-left: 20px;
+        padding-right: 20px;
     }
     
     .seccion h2{
@@ -320,12 +352,12 @@ hr{
     }
 
     .sabrina {
-        font-size: 24px; 
+        font-size: 22px; 
         text-align: center; 
     }
 
     .pie {
-        height: auto; /* Ajusta la altura del footer */
+        height: 100px; /* Ajusta la altura del footer */
         font-size: 12px; 
     }
 
@@ -333,7 +365,7 @@ hr{
         font-size: 16px; 
         flex-direction: column; 
         align-items: center; 
-        padding: 10px 0; 
+        
     }
 
     #footer a {
