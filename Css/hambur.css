@@ -5,7 +5,7 @@ body{
     color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
-    min-height:530vh;
+    min-height:575vh;
     background-color: #dad7cd;
     position: relative;
 }
@@ -20,7 +20,7 @@ header{/* menu */
 }
     
 /*nombre spa*/
-#Logo{
+.Logo{
    display: flex;
    justify-content: end;
    font-size: 25px;
@@ -72,6 +72,17 @@ header{/* menu */
     
 }
 
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #dad7cd;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(0);
+}
 
 .info{
   position: fixed;
@@ -103,10 +114,9 @@ header{/* menu */
     justify-content: center;
     gap: 100px;/*para la separacion*/
 }
-
 .seccion div{/*Para que las secciones esten en columnas*/
-    display: flex;
-    flex-direction: column;
+display: flex;
+flex-direction: column;
 }
     
 div h2{/*para los h2 del footer*/
@@ -138,7 +148,8 @@ hr{
     background-color: #dad7cd;
     border: 0px;
 }
-
+/*Footer*/
+#footer 
 /*Contactos pie de pagina*/
 #footer a{
     padding: 0px;
@@ -148,6 +159,13 @@ hr{
     padding-right: 0px;
 }
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0%;
+    background-color: #f5f5f5;
+}
+
 .navbar{
     display: flex;
     justify-content: flex-end;
@@ -155,7 +173,6 @@ hr{
     padding: 16px 64px;
     background-color:  #3a5a40;
     position: relative;
-    width: 50%;
 }
 
 .nav-link{
@@ -204,10 +221,10 @@ hr{
     display: none;
 }
 
-@media (max-width: 1250px){
+@media (max-width: 768px){
     header {
         width: 95%;              
-        position: absolute;          /* Fija el header en la parte superior */
+        position: fixed;          /* Fija el header en la parte superior */
         top: 0;                   /* Alineado a la parte superior de la pantalla */
         left: 0;                  /* Alineado a la izquierda */
         background-color: #3a5a40;   
@@ -231,7 +248,8 @@ hr{
         height: 320px;
         width: 420px;
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
     .belleza h3{/*para el h3 de la imagen*/
@@ -257,7 +275,7 @@ hr{
 
     .nav-link{
         position: absolute;
-        top: 70px;
+        top: 100%;
         right: 0;
         width: 100%;
         height: 0;
@@ -279,103 +297,21 @@ hr{
         padding: 10px 20px;
     }
 
-    #menu-toogle:checked + .menu-icon + .nav-link{/* El menú se expandirá a todo el alto de la pantalla */
+    #menu-toogle:checked + .menu-icon + .nav-link{
         height: 100vh;
     }
 
-    #menu-toogle:checked + .menu-icon .linea:nth-child(1) {/* Rota la primera línea */
+    #menu-toogle:checked + .menu-icon .linea:nth-child(1) {
         transform: rotate(45deg) translate(13px, 10px);
     }
     
-    #menu-toogle:checked + .menu-icon .linea:nth-child(2) {/* Oculta la segunda línea */
+    #menu-toogle:checked + .menu-icon .linea:nth-child(2) {
         transform: scale(0);
     }
     
-    #menu-toogle:checked + .menu-icon .linea:nth-child(3) {/* Rota la tercera línea */
+    #menu-toogle:checked + .menu-icon .linea:nth-child(3) {
         transform: rotate(-45deg) translate(8px, -6px);
     }
-
-    #footer{
-        width: 90%;
-    }
-
-    .info{
-        position: fixed;
-        left: 0px;
-        bottom: 0px;
-        top: 10px;
-        right: 0;
-        
-      }
-      
-         .pie{/*para el footer*/
-          background-color: #3a5a40;
-          position: absolute;
-          bottom: 0;
-          width: 100%;
-          height: 10%;
-          font-family: "Bona Nova SC";
-         }
-      
-         .sabrina{/*El nombre del footer*/
-          display: flex;
-          align-items: center;
-          flex-direction: column;
-          font-size: 40px;
-          }
-      
-      .seccion{
-          display: flex;
-          justify-content: center;
-          gap: 100px;/*para la separacion*/
-      }
-
-      .seccion div{/*Para que las secciones esten en columnas*/
-      display: flex;
-      flex-direction: column;
-      }
-          
-      div h2{/*para los h2 del footer*/
-          color: #fff;
-          font-size: 30px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-      }
-      
-      a{/*para los a*/
-          color: #fff;
-          text-decoration: none;/*para que no tenga decoraciones el texto*/
-          padding: 10px 10px 10px 0px;
-      }
-      
-      .derechos{
-          display: flex;
-          justify-content: space-evenly;
-          padding: 20px;
-          font-size: 30px;
-          background: #23372d;
-          position: absolute;
-          bottom: 0;
-          width: 98.3%;
-          height: 10%;
-      }
-      
-      /*Linea pie de pagina*/
-      hr{
-          height: 15px;
-          background-color: #dad7cd;
-          border: 0px;
-      }
-      
-      /*Contactos pie de pagina*/
-      #footer a{
-          padding: 0px;
-          font-size: 15px;
-      }
-      .derechos{
-          padding-right: 0px;
-      }
     
 }
 
