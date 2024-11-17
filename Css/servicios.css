@@ -114,5 +114,58 @@ hr{
     font-size: 15px; /* Reduce el tamaño de los enlaces */
 }
 
+/*Body*/
+.Titulo{
+    text-align: center;
+    font-size: 70px;
+    color: #3a5a40;
+}
+.Contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+}
 
+.Caja1{
+    font-size: 30px;
+}
 
+.Caja2{
+    position: relative;
+    left: 400px;
+    font-size: 24px;
+}
+h2{
+    color: #3a5a40;
+    
+}
+.Caja3{
+    position: relative;
+    top: 300px;
+    left: 160px;
+}
+.Caja4{
+    position: relative;
+    top: 300px;
+    left: 260px;
+}
+.Caja5{
+    position: relative;
+    top: 600px;
+    left: -135px;
+}
+.Caja6{
+    position: relative;
+    top: 460px;
+    left: -400px;
+}
+.Caja7{
+    position: relative;
+    top: 460px;
+    left: -300px;
+}
+.Caja8{
+    position: absolute;
+    top: 900px;
+    font-size: 30px;
+}
